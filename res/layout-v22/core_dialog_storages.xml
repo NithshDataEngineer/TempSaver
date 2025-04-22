@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/lv_path" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/clear_grey" android:dividerHeight="1.0dip" />
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/tv_ok" android:layout_marginTop="@dimen/margin_m" android:layout_marginBottom="@dimen/margin_m" android:text="@string/ok" android:layout_marginVertical="@dimen/margin_m" style="@style/DialogButtonsStyle" />
+</LinearLayout>

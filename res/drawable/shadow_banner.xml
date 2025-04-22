@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:radius="@dimen/border_radius_m" />
+            <solid android:color="#10666666" />
+            <padding android:left="1.0dip" android:top="1.0dip" android:right="1.0dip" android:bottom="1.0dip" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:radius="@dimen/border_radius_m" />
+            <solid android:color="#20666666" />
+            <padding android:left="1.0dip" android:top="1.0dip" android:right="1.0dip" android:bottom="1.0dip" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:radius="@dimen/border_radius_m" />
+            <solid android:color="#30666666" />
+            <padding android:left="1.0dip" android:top="1.0dip" android:right="1.0dip" android:bottom="1.0dip" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:radius="@dimen/border_radius_m" />
+            <solid android:color="#40666666" />
+            <padding android:left="1.0dip" android:top="1.0dip" android:right="1.0dip" android:bottom="1.0dip" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:radius="@dimen/border_radius_m" />
+            <solid android:color="#50666666" />
+            <padding android:left="1.0dip" android:top="1.0dip" android:right="1.0dip" android:bottom="1.0dip" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:radius="@dimen/border_radius_m" />
+            <solid android:color="#60666666" />
+            <padding android:left="1.0dip" android:top="1.0dip" android:right="1.0dip" android:bottom="1.0dip" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:radius="@dimen/border_radius_m" />
+            <solid android:color="#70666666" />
+            <padding android:left="1.0dip" android:top="1.0dip" android:right="1.0dip" android:bottom="1.0dip" />
+        </shape>
+    </item>
+</layer-list>

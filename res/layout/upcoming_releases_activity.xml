@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar_upcoming_releases" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize">
+        <TextView android:id="@id/tv_title_upcoming_releases" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/upcoming_releases_title" style="@style/UptodownToolbarStyle" />
+    </androidx.appcompat.widget.Toolbar>
+    <com.google.android.material.tabs.TabLayout android:id="@id/tab_upcoming_releases" android:background="@color/background_color" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/toolbar_upcoming_releases" app:tabIndicator="@drawable/bg_dialog_title" app:tabIndicatorColor="@color/main_blue" app:tabIndicatorFullWidth="true" app:tabIndicatorGravity="bottom" app:tabIndicatorHeight="5.0dip" app:tabMode="fixed" app:tabRippleColor="@color/transparent" />
+    <androidx.core.widget.NestedScrollView android:id="@id/nsv_upcoming_releases" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tab_upcoming_releases">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_upcoming_releases" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/ll_order_upcoming_releases" android:visibility="invisible" layout="@layout/dropdown_menu_layout" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_upcoming_releases" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <TextView android:textSize="@dimen/text_size_l" android:textColor="@color/text_secundary" android:gravity="center" android:id="@id/tv_no_items_upcoming_releases" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/msg_no_upcoming_releases" android:layout_centerInParent="true" />
+    <include android:id="@id/loading_view_upcoming_releases" layout="@layout/core_loading_view" />
+</RelativeLayout>
