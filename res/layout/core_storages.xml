@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_path" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_centerVertical="true" android:contentDescription="@null" />
+    <RelativeLayout android:id="@id/rl_contenedor_path" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_centerVertical="true" android:layout_toStartOf="@id/rb_path" android:layout_toEndOf="@id/iv_path">
+        <TextView android:textSize="14.0sp" android:textColor="@color/text_primary" android:gravity="start|center" android:id="@id/tv_path_name" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:lines="2" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/text_secundary" android:id="@id/tv_path_detail" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tv_path_name" />
+    </RelativeLayout>
+    <RadioButton android:id="@id/rb_path" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    <View android:focusable="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_below="@id/rl_contenedor_path" />
+</RelativeLayout>

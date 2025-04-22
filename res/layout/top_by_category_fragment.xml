@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/UptodownToolbarTheme" android:id="@id/toolbar_top_by_cat" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize">
+        <TextView android:id="@id/tv_toolbar_title_top_by_cat" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/UptodownToolbarStyle" />
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerview_top_cat" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar_top_by_cat" android:nestedScrollingEnabled="false" />
+    <TextView android:textColor="@color/text_secundary" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_no_data_top_cat" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="60.0dip" android:text="@string/no_data_available" android:layout_centerInParent="true" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+    <include android:id="@id/loading_view_top_by_cat_fragment" layout="@layout/core_loading_view" />
+</RelativeLayout>
